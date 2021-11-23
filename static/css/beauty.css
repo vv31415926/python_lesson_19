@@ -1,0 +1,15 @@
+.text1{
+    color:blue;
+    font-size: large;
+}
+
+.text2{
+    color:red;
+    background-color:yellow;
+    font-size: xx-large;
+}
+
+.button1{
+    color:blue;
+    line-height: 3em
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вакансии. Город.</title>
+    <link rel="stylesheet" href="/static/css/beauty.css">
+</head>
+<body>
+    <a href="\index" >Главная страница</a>
+    <hr>
+
+    <text  class="text1">Страна:</text> Россия <br>
+
+    <text  class="text1">Выберите город:</text>
+    <form action="\hh_vacancy\" method="post">
+        <select name='city' size=”4”>
+            <option value="Челябинск">Челябинск</option>
+            <option value="Москва">Москва</option>
+            <option value="Златоуст">Златоуст</option>
+            <option value="Магнитогорск">Магнитогорск</option>
+        </select>
+        <br>
+        <text  class="text1">Введите вакансию:</text>
+        <input type="text" name="vac" value="Программист"> <Br>
+        <button type="submit" >Дальше...</button>
+</body>
+</html>

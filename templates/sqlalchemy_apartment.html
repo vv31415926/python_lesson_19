@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Параметры для просмотра базы данных 'Квартиры'.</title>
+    <link rel="stylesheet" href="/static/css/beauty.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <a href="\index" >Главная страница</a>
+    <hr>
+
+    Выберите район:
+    <form action="\sqlalchemy_apartment_view\" method="post">   <!--  завершающий \ - обязателен, если есть  в app.route -->
+        <select name='region' size=”4”>
+            <option value='Калининский район'>      Калининский район      </option>
+            <option value='Курчатовский район'>     Курчатовский район     </option>
+            <option value='Ленинский район'>        Ленинский район        </option>
+            <option value='Металлургический район'> Металлургический район </option>
+            <option value='Советский район'>        Советский район        </option>
+            <option value='Тракторозаводский район'>Тракторозаводский район</option>
+            <option value='Центральный район'>      Центральный район      </option>
+        </select>
+        <br>
+        <input type="checkbox" name="load" value="a3" checked>Обновить базу данных<br>
+
+
+        <button type="submit" >"Просмотр"</button>
+    </form>
+
+
+
+
+</body>
+</html>

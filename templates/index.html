@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание Pro</title>
+    <link rel="stylesheet" href="/static/css/beauty.css">
+</head>
+<body>
+    <h1 align="center">Главная страница</h1>
+    <p align="center">
+
+        <text  class="text2">сегодня:&nbsp{{ curdate }},&nbsp{{curweek}}.</text>
+    </p>
+    <hr>
+
+    <a href="\personal\" >Персональные данные</a>
+    <br><br>
+
+    <a href="\parser\">Квартиры</a>
+    <br><br>
+
+    <a href="\hh_main\">Вакансии</a>
+    <br><br>
+
+    <a href="\bd_apartment\">Информация по квартирам (база данных)</a>
+    <br><br>
+
+
+    <a href="{{url_for('sqlalchemy_apartment')}}">Информация по квартирам (SQLAlchemy)</a>
+    <!--a href="  \sqlalchemy_apartment\">Информация по квартирам (SQLAlchemy)</a-->
+    <br><br>
+
+</body>
+</html>

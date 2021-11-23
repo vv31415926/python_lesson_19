@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>База данных "Квартиры"</title>
+    <link rel="stylesheet" href="/static/css/beauty.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <input type="button" onclick="history.back();" value="Назад"/>
+    <hr>
+
+    <h2>Данные по квартирам</h2>
+
+    <text  class="text1">Страна:</text> Россия <br><br>
+    <text  class="text1">Город:</text> Челябинск<br><br>
+    <text  class="text1">Район:</text> {{region}}&nbsp&nbsp
+    <text  class="text1">Обновлено:</text>{{update}}<br><br>
+
+    <table align="left" class="table table-striped" width="40%">
+        <tr>
+            {% for item in field %}
+                <th> {{item}} </th>
+            {% endfor %}
+        </tr>
+
+        {% for rec in data %}
+            <tr>
+                <td> {{rec[0]}} </td>
+                <td> {{rec[1]}} </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
